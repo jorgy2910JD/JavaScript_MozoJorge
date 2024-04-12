@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <
+</head>
+<body>
+    <div class="container">
+        <div class="fila">
+            <div class="columna">
+                <h1>Administrador</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columna">
+                <h3>Agregar un nuevo camper</h3>
+                <form>
+                    <div class="fila">
+                        <div class="columna">
+                            <label>ID Camper</label>
+                            <input type="number" class="form-control"
+                            id="camper" required> 
+                        </div>
+                        <div class="col mt-3">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control"
+                            id="name-camper" required>
+                        </div>
+                        <div class="col mt-3">
+                            <label>Apellidos</label>
+                            <input type="text" class="form-control"
+                            id="lastname-camper" required>
+                        </div>
+                        <div class="col mt-3">
+                            <label>Estado</label>
+                            <select id="estado-camper"  class="form-control"></select>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

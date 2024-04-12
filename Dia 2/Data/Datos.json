@@ -1,0 +1,19 @@
+{
+    "campers": [ 
+        {
+            "id": "  ",
+            "nombres": "  ",
+            "apellidos": "  ",
+            "direccion": "  ",
+            "acudiente": "  ",
+            "telefonos": {
+                "celular": "  ",
+                "fijo": "  "
+            },
+            "estado": "  ",
+            "riesgo": "  "
+             
+        }  
+    ]
+ 
+} 
