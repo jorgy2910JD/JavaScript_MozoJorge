@@ -14,8 +14,6 @@ const cargarTablita=()=>{
         <td>${item.estado}</td>
         <td>${item.riesgo}</td>
         <td>${item.ruta}</td>
-        <td>${item.telefono}</td>
-        <td>${item.celular}</td>
         <td>${item.acudiente}</td></>
         
         fila.innerHTML=celdas
