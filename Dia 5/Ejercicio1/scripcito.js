@@ -2,7 +2,7 @@ class persona {
     constructor(name, age, country) {
     this.name = name;
     this.age = age;
-    this.country= conutry;
+    this.country= country;
     }
 
 
@@ -16,5 +16,5 @@ const persona1 = new persona ('Jorge', 17, 'Colombia');
 const persona2 = new persona ('Joao', 23,'Brasil');
 
 persona1.showDetails();
-persona2.showDetails();
+persona2.showDetails(); 
 
