@@ -1,5 +1,8 @@
-let request = "https://swapi.py4e.com/api/people/1/"
+fetch ("https://swapi.py4e.com/api/people/1/")
+
+.then(res=> console.log(res)) 
 
 
-fetch (request).then(Response)
+
+
 
