@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'oxanium', cursive;
+}
+body {
+    background: linear-gradient(rgb(78, 163, 243), white);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.imagen {
+    position: absolute;
+    top: 10%;
+    height: 10%;
+    
+}

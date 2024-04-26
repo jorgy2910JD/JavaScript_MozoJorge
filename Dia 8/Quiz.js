@@ -7,9 +7,11 @@ function fecth() {
         if(this.readyState ===4 && this.status===200){
             let response =JSON.parse(this.responseText);
             console.log(response);
+            displayStar(response);
         }
         else{
             console.log("ERROR!")
+            console.log(this.statusText);
         }
     }
     xhr.send();
@@ -22,6 +24,7 @@ function displayStar (Data) {
         starInfo.innerHTML= '<p> Error!!! </p>'
 
     }else {
+        console.log(Data);
         starInfo.innerHTML=`
         <table class="table">
         <thead>
@@ -39,9 +42,13 @@ function displayStar (Data) {
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>${Data.name}</td>
+            <td>${Data.height}</td>
+            <td>${Data.mass}</td>
+            <td>${Data.hair_color}</td>
+            <td>${Data.eye_color}</td>
+            <td>${Data.birth_year}</td>
+            <td>${Data.gender}</td>
           </tr>
         </tbody>
       </table> 
