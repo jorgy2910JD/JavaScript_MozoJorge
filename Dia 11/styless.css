@@ -60,7 +60,8 @@ main {
 }
 .imagen_muñeco {
     position: absolute;
-    top: 32vh;
-    left: 41.8vw;
+    width:  6vw;
+    top: 28vh;
+    left: 41.5vw;
     z-index: 1;
 }
