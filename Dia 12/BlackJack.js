@@ -47,10 +47,11 @@ function drawCart(CJ) {
 }
 
 function pedirCarta() {
-    if (IndiceCarta < 4) {
+    if (IndiceCarta < cartas.length) {
         let CJ = cartas[IndiceCarta];
         cartasJugador.push(CJ);
         IndiceCarta++;
+        drawCart(CJ);
     }
 }
 
