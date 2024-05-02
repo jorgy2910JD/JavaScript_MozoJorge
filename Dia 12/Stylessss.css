@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(8, 17, 8);
+}
+#canvas {
+    background-color: cadetblue;
+    background-size: cover;
+    background-image: url("./Storage/Fondo de BJ.jpg");
+    background-position: center;
+    width: 50vw;
+    border-radius: 10px;
+}
+#title {
+    text-align: center;
+    color: white;
+    margin: 5px;
+    font-weight:bold ;
+    font-size: 2em;
+}
+#canvasDiv {
+    text-align: center;
+}
+.botones {
+    position: absolute;
+    margin: 15px;
+    display: flex;
+    left: 24.3vw;
+   
+    gap: 13.3vw;
+}
+#info {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    margin:30px;
+}
+.button {
+    background-color: rgb(7, 179, 242);
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 20px;
+}
+#reset {
+    visibility: hidden;
+    background-color: #15bb1a;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
