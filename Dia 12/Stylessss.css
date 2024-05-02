@@ -60,3 +60,20 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.rotar {
+    transition: transform 0.5s;
+}
+
+.rotar.rotar180 {
+    transform: rotateY(180deg);
+}
+
+#canvasDiv .carta {
+    transition: transform 0.5s;
+}
+
+#canvasDiv .carta.rotar180 {
+    transform: rotateY(180deg);
+}
+
