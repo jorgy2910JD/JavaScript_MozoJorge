@@ -31,7 +31,7 @@ body {
     text-align: center;
     color: white;
     font-size: 1.2em;
-    margin:30px;
+    margin:75px;
 }
 .button {
     background-color: rgb(7, 179, 242);
@@ -48,7 +48,6 @@ body {
     gap: 20px;
 }
 #reset {
-    visibility: hidden;
     background-color: #15bb1a;
     border: none;
     color: black;
