@@ -1,0 +1,36 @@
+body {
+    margin: 5%;
+    padding: 0;
+}
+ .botones {
+    display: flex;
+    gap: 1vw;
+}
+.boton_1 {
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 7vw;
+    height: 4.5vh;
+}
+.boton_2 {
+    background-color: rgb(38, 108, 220);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 7vw;
+    height: 4.5vh;
+}
+.boton_3 {
+    background-color: rgb(223, 40, 40);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 7vw;
+    height: 4.5vh;
+}
+

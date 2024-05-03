@@ -25,14 +25,14 @@ var IndiceCarta = 0;
 var palos = ["S", "H", "D", "C"];
 
 // Se generan las cartas con atributo, valor y palo
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 5; i++) {
     for (let j = 1; j <= 11; j++) {
         cartas.push(new carta(j, palos[i]));
     }
 }
 
 // Barajar las cartas
-for (let i = 0; i < 200; i++) {
+for (let i = 0; i < 100; i++) {
     cartas.splice(Math.floor(Math.random() * 52), 0, cartas[0]);
     cartas.shift();
 }
