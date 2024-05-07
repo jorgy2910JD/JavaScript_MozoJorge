@@ -41,13 +41,9 @@ document.addEventListener("DOMContentLoaded", function(){
             poster:poster,
             productora:productora
         };
+
     })
 })
-
-
-
-
-
 
 
 //funcion para la ventanita de nuevo heroe

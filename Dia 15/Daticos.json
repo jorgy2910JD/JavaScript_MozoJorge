@@ -1,0 +1,66 @@
+{
+    "resultados": [
+      {
+        "género": "mujer",
+        "nombre": {
+          "título": "Señorita",
+          "primero": "Jennie",
+          "último": "Nichols"
+        },
+        "ubicación": {
+          "calle": {
+            "número": 8929,
+            "nombre": "Valwood Pkwy"
+          },
+          "ciudad": "Facturación",
+          "estado": "Michigan",
+          "país": "Estados Unidos",
+          "código postal": "63104",
+          "coordenadas": {
+            "latitud": "-69.8246",
+            "longitud": "134.8719"
+          },
+          "timezone": {
+            "offset": "+9:30",
+            "descripción": "Adelaida, Darwin"
+          }
+        },
+        "correo electrónico": "jennie.nichols@example.com",
+        "inicio de sesión": {
+          "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
+          "nombre de usuario": "pavo real amarillo117",
+          "contraseña": "addison",
+          "sal": "sld1yGtd",
+          "md5": "ab54ac4c0be9480ae8fa5e9e2a5196a3",
+          "sha1": "edcf2ce613cbdea349133c52dc2f3b83168dc51b",
+          "sha256": "48df5229235ada28389b91e60a935e4f9b73eb4bdb855ef9258a1751f10bdc5d"
+        },
+        "dob": {
+          "fecha": "1992-03-08T15:13:16.688Z",
+          "edad": 30
+        },
+        "registrado": {
+          "fecha": "2007-07-09T05:51:59.390Z",
+          "edad": 14
+        },
+        "teléfono": "(272) 790-0888",
+        "celda": "(489) 330-2385",
+        "id": {
+          "nombre": "SSN",
+          "valor": "405-88-3636"
+        },
+        "imagen": {
+          "grande": "https://randomuser.me/api/portraits/men/75.jpg",
+          "medio": "https://randomuser.me/api/portraits/med/men/75.jpg",
+          "miniatura": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+        },
+        "nat": "NOSOTROS"
+      }
+    ],
+    "info": {
+      "semilla": "56d27f4a53bd5441",
+      "resultados": 1,
+      "página": 1,
+      "versión": "1.4"
+    }
+  }
