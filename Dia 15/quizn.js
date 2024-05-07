@@ -26,5 +26,6 @@ function fecth() {
         }
     }
     xhr.send(); 
+    
 
 }
