@@ -19,6 +19,37 @@ function validarInfo (){
 return true
 }
 
+//Guardar los datos del heroe en el JSON
+
+document.addEventListener("DOMContentLoaded", function(){
+    const saveHeroButton = document.querySelector("boton_2");
+
+    saveHeroButton.addEventListener("click", function(){
+        //variables para los input de los datos de registro
+        const nameCharacter = document.getElementById("characterName").value;
+        const nameActor = document.getElementById("nameActor").value;
+        const ageActor = document.getElementById("inputEdadActor").value;
+        const ubicacion = document.getElementById("ubicacion").value;
+        const poster = document.getElementById("inputCity").value;
+        const productora = document.getElementById("productora").value;
+
+        const DatosHeroe = {
+            nameCharacter:nameCharacter,
+            nameActor:nameActor,
+            ageActor:ageActor,
+            ubicacion:ubicacion,
+            poster:poster,
+            productora:productora
+        };
+    })
+})
+
+
+
+
+
+
+
 //funcion para la ventanita de nuevo heroe
 
 document.getElementById("botonMostrarFuncion").addEventListener("click", function(){
