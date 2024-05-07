@@ -44,3 +44,9 @@ document.getElementById("botonMostrarFuncion").addEventListener("click", functio
     nuevoTraje.style.display = "block";
 })
 
+//se le agrega una funcion al boton "-" para eliminar el traje
+
+var deleteTraje = nuevoTraje.querySelector(".EliminarTraje");
+EliminarTraje.addEventListener("click",function(){
+    contenedorTrajes.removeChild(nuevoTraje);
+})
