@@ -1,31 +1,24 @@
-const namePerson = document.getElementById("name").value;
-const emailPerson = document.getElementById("email").value;
-const birthdayPerson = document.getElementById("birthday").value;
-const addressPerson = document.getElementById("address").value;
-const phonePerson = document.getElementById("phoneNumber").value;
-const passwordPerson = document.getElementById("password").value;
+const foto =document.querySelector('#foto');
+const namePerson = document.querySelector('#namePerson');
+const emailPerson = document.querySelector('#emailPerson');
+const birthdayPerson = document.querySelector('#birthdayPerson');
+const addressPerson = document.querySelector('#addressPerson');
+const phonePerson = document.querySelector('#phonePerson');
+const passwordPerson = document.querySelector('#passwordPerson');
 
+const createUser = async () => {
+    const url = 'https://randomuser.me/api/';
+    const respuesta = await fetch(url);
+    const { results } = await respuesta.json();
+    const datos = results[0];
 
-
-
-
-
-function fecth() {
-    let xhr = new XMLHttpRequest();
-    let url = 'https://randomuser.me/api/' ; 
-    xhr.open('GET',url,true)
-    xhr.onreadystatechange=function(){
-        if(this.readyState ===4 && this.status===200){
-            let response =JSON.parse(this.responseText);
-            console.log(response);
-            displayStar(response);
-        }
-        else{
-            console.log("ERROR!")
-            console.log(this.statusText);
-        }
-    }
-    xhr.send(); 
-    
-
+    foto.src = datos.picture.medium;
+    namePerson.textContent = datos.name.first;
+    emailPerson.textContent = datos.email;
+    birthdayPerson.textContent = datos.dob.date;
+    addressPerson.textContent = datos.location.street.name + ', ' + datos.location.city + ', ' + datos.location.country;
+    phonePerson.textContent = datos.phone;
+    passwordPerson.textContent = datos.login.password;
 }
+document.addEventListener ("DOMContentLoaded", createUser);
+
