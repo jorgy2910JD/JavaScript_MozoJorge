@@ -1,4 +1,4 @@
-.cuadroDatos {
+.usuario_card {
     width: 600px; 
     background: #ffffff;
     padding:40px;
@@ -14,4 +14,5 @@
 #foto {
     border-radius: 150px;
     align-items: center;
+    margin: 0 auto;
 }

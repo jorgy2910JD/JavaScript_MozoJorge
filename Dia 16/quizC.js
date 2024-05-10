@@ -1,23 +1,54 @@
-const foto =document.querySelector('#foto');
-const namePerson = document.querySelector('#namePerson');
-const emailPerson = document.querySelector('#emailPerson');
-const birthdayPerson = document.querySelector('#birthdayPerson');
-const addressPerson = document.querySelector('#addressPerson');
-const phonePerson = document.querySelector('#phonePerson');
-const passwordPerson = document.querySelector('#passwordPerson');
+class CharacterRandomP extends HTMLElement {
+    constructor(){
+        super();
+        this.render();
+    }
+    render(){
+        this.innerHTML =  `
+    <center>
+        <br><br><br><br><br>
+        <h1>Random User Generator ;)</h1>
+        <div class="container">
+            <div id="container">
+                
+            </div>        
+            
+            <div id="Info">
+                
+            </div>
+            <div class="datos">
+                <button id="btt" onmouseover="nombre()"><i class="user" aria-hidden="true"></i></i></i></button>
+                <button id="btt" onmouseover="correo()"><i class="envelope" aria-hidden="true"></i></button>
+                <button id="btt" onmouseover="cumpleaños()"><i class="birthday" aria-hidden="true"></i></button>
+                <button id="btt" onmouseover="ubicacion()"><i class="map-marker" aria-hidden="true"></i></button>
+                <button id="btt" onmouseover="telefono()"><i class="phone" aria-hidden="true"></i></button>
+                <button id="btt" onmouseover="contraseña()"><i class="lock" aria-hidden="true"></i></button>
 
-const createUser = async () => {
-    const url = 'https://randomuser.me/api/';
-    const respuesta = await fetch(url);
-    const { results } = await respuesta.json();
-    const datos = results[0];
+            </div> 
 
-    foto.src = datos.picture.medium;
-    namePerson.textContent = datos.name.first;
-    emailPerson.textContent = datos.email;
-    birthdayPerson.textContent = datos.dob.date;
-    addressPerson.textContent = datos.location.street.name + ', ' + datos.location.city + ', ' + datos.location.country;
-    phonePerson.textContent = datos.phone;
-    passwordPerson.textContent = datos.login.password;
+        </div>
+    </center>
+        `;  
 }
-document.addEventListener ("DOMContentLoaded", createUser);
+}
+
+customElements.define('persona-r', CharacterRandomP);
+
+function User(){
+    let xhr = new XMLHttpRequest();
+    let url = `https://randomuser.me/api/`;
+    xhr.open('GET',url,true);
+    xhr.onreadystatechange = function(){
+        if (this.readyState === 4 && this.status === 200){
+            let response = JSON.parse(this.responseText);
+            console.log(response);
+            displayUser(response);
+        }
+        else if( this.readyState == 4 ){
+            console.log('Error:',this.statusText);
+        }
+    };
+    xhr.send();
+}
+
+
